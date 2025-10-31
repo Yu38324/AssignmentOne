@@ -21,6 +21,7 @@
 -->
 <!-- First part for picture of welcome -->
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -29,6 +30,7 @@
     tools:context=".MainActivity">
 
     <!-- Welcome ImageView -->
+    <!-- Align the bottom of the current view to the top of the buttonGrid view -->
     <ImageView
         android:id="@+id/welcomeImage"
         android:layout_width="0dp"
@@ -37,22 +39,74 @@
         android:src="@drawable/img_main_banner"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGrid"
+        app:layout_constraintHeight_percent="0.5"/>
 
     <!-- welcome text on image -->
     <TextView
         android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
         style="@style/WelcomeTextStyle"
         android:padding="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/welcomeImage"
         app:layout_constraintBottom_toBottomOf="@id/welcomeImage"
-        app:layout_constraintStart_toStartOf="@id/welcomeImage"
-        app:layout_constraintEnd_toEndOf="@id/welcomeImage" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Second part for buttons -->
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:background="@color/button_background"
+        android:alignmentMode="alignBounds"
+        android:columnOrderPreserved="false"
+        app:layout_constraintTop_toBottomOf="@id/welcomeImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.5">
+
+        <!-- Facilities button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/button_background"
+            style="@style/ButtonContainerStyle">
+
+            <ImageButton
+                android:id="@+id/facilitiesButton"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/img_btn_facilities"
+                android:contentDescription="@string/facilities" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/facilities"
+                style="@style/ButtonTextStyle"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!-- Second part for buttons -->
+
 
 
