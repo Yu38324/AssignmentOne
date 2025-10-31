@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#1B5E20</color>
+    <color name="light_green">#66BB6A</color>
+    <color name="welcome_text_color">#FFFFFF</color>
+    <color name="welcome_shadow_color">#80000000</color>
 </resources>
