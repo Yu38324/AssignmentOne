@@ -19,7 +19,7 @@
     </style>
     <!-- button container styles -->
     <style name="ButtonContainerStyle">
-        <item name="android:background">?attr/selectableItemBackground</item>
+
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>

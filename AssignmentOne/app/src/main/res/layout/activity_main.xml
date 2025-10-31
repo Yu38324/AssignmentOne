@@ -64,7 +64,6 @@
         android:layout_height="0dp"
         android:columnCount="2"
         android:rowCount="2"
-        android:background="@color/button_background"
         android:alignmentMode="alignBounds"
         android:columnOrderPreserved="false"
         app:layout_constraintTop_toBottomOf="@id/welcomeImage"
@@ -81,13 +80,15 @@
             android:layout_columnWeight="1"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/button_background"
+
             style="@style/ButtonContainerStyle">
 
             <ImageButton
                 android:id="@+id/facilitiesButton"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
                 android:src="@drawable/img_btn_facilities"
                 android:contentDescription="@string/facilities" />
             <TextView
@@ -98,12 +99,88 @@
                 android:layout_marginTop="8dp" />
         </LinearLayout>
 
+        <!-- Event button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            style="@style/ButtonContainerStyle">
+
+            <ImageButton
+                android:id="@+id/eventButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_btn_events"
+                android:contentDescription="@string/events" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/events"
+            style="@style/ButtonTextStyle"
+            android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- club button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            style="@style/ButtonContainerStyle">
+
+            <ImageButton
+                android:id="@+id/clubButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_btn_clubs"
+                android:contentDescription="@string/clubs" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clubs"
+                style="@style/ButtonTextStyle"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Support button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            style="@style/ButtonContainerStyle">
+
+            <ImageButton
+                android:id="@+id/supportButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_btn_support"
+                android:contentDescription="@string/support" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support"
+                style="@style/ButtonTextStyle"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
     </GridLayout>
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
