@@ -6,7 +6,7 @@
 
     <!-- text color -->
     <color name="welcome_text_color">#FFFFFF</color>
-    <color name="button_text_color">#1B5E20</color>
+    <color name="button_text_color">#FFFFFF</color>
 
     <!-- shadows and background -->
     <color name="text_shadow">#80000000</color>

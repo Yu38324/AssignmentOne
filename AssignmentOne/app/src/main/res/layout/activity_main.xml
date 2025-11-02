@@ -60,6 +60,7 @@
     <!-- Second part for buttons -->
     <GridLayout
         android:id="@+id/buttonGrid"
+        android:background="@color/primary_green"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:columnCount="2"
@@ -85,10 +86,10 @@
 
             <ImageButton
                 android:id="@+id/facilitiesButton"
+                android:background="@color/primary_green"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-
                 android:src="@drawable/img_btn_facilities"
                 android:contentDescription="@string/facilities" />
             <TextView
@@ -112,6 +113,7 @@
 
             <ImageButton
                 android:id="@+id/eventButton"
+                android:background="@color/primary_green"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -139,6 +141,7 @@
 
             <ImageButton
                 android:id="@+id/clubButton"
+                android:background="@color/primary_green"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -166,6 +169,7 @@
 
             <ImageButton
                 android:id="@+id/supportButton"
+                android:background="@color/primary_green"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
