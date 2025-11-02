@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Welcome ImageView -->
+    <!-- Align the bottom of the current view to the top of the buttonGrid view -->
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_main_banner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGrid"
+        app:layout_constraintHeight_percent="0.5"/>
+
+    <!-- welcome text on image -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        style="@style/WelcomeTextStyle"
+        android:padding="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/welcomeImage"
+        app:layout_constraintBottom_toBottomOf="@id/welcomeImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Second part for buttons -->
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:background="@color/primary_green"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:alignmentMode="alignBounds"
+        android:columnOrderPreserved="false"
+        app:layout_constraintTop_toBottomOf="@id/welcomeImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.5">
+
+        <!-- Facilities button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            style="@style/ButtonContainerStyle">
+
+            <ImageButton
+                android:id="@+id/facilitiesButton"
+                android:background="@drawable/btn_support_selector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/img_btn_facilities"
+                android:contentDescription="@string/facilities" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/facilities"
+                style="@style/ButtonTextStyle"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Event button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            style="@style/ButtonContainerStyle">
+
+            <ImageButton
+                android:id="@+id/eventButton"
+                android:background="@drawable/btn_support_selector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_btn_events"
+                android:contentDescription="@string/events" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/events"
+                style="@style/ButtonTextStyle"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- club button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            style="@style/ButtonContainerStyle">
+
+            <ImageButton
+                android:id="@+id/clubButton"
+                android:background="@drawable/btn_support_selector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_btn_clubs"
+                android:contentDescription="@string/clubs" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clubs"
+                style="@style/ButtonTextStyle"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Support button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            style="@style/ButtonContainerStyle">
+
+            <ImageButton
+                android:id="@+id/supportButton"
+                android:background="@drawable/btn_support_selector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_btn_support"
+                android:contentDescription="@string/support" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support"
+                style="@style/ButtonTextStyle"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
