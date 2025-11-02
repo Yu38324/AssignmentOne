@@ -91,7 +91,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:src="@drawable/img_btn_facilities"
-                android:contentDescription="@string/facilities" />
+                android:contentDescription="@string/facilities"
+                android:onClick="onFacilitiesClick" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -119,7 +120,8 @@
                 android:layout_weight="1"
                 android:scaleType="centerInside"
                 android:src="@drawable/img_btn_events"
-                android:contentDescription="@string/events" />
+                android:contentDescription="@string/events"
+                android:onClick="onEventsClick" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,7 +149,8 @@
                 android:layout_weight="1"
                 android:scaleType="centerInside"
                 android:src="@drawable/img_btn_clubs"
-                android:contentDescription="@string/clubs" />
+                android:contentDescription="@string/clubs"
+                android:onClick="onClubsClick" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -175,7 +178,8 @@
                 android:layout_weight="1"
                 android:scaleType="centerInside"
                 android:src="@drawable/img_btn_support"
-                android:contentDescription="@string/support" />
+                android:contentDescription="@string/support"
+                android:onClick="onSupportClick" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
