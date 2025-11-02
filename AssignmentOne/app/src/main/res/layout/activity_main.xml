@@ -86,7 +86,7 @@
 
             <ImageButton
                 android:id="@+id/facilitiesButton"
-                android:background="@color/primary_green"
+                android:background="@drawable/btn_support_selector"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -113,7 +113,7 @@
 
             <ImageButton
                 android:id="@+id/eventButton"
-                android:background="@color/primary_green"
+                android:background="@drawable/btn_support_selector"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -141,7 +141,7 @@
 
             <ImageButton
                 android:id="@+id/clubButton"
-                android:background="@color/primary_green"
+                android:background="@drawable/btn_support_selector"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -169,7 +169,7 @@
 
             <ImageButton
                 android:id="@+id/supportButton"
-                android:background="@color/primary_green"
+                android:background="@drawable/btn_support_selector"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
