@@ -29,28 +29,28 @@ public class MainActivity extends AppCompatActivity {
     public void onFacilitiesClick(View view){
         Toast.makeText(this,"Facilities clicked", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("BUTTON_TYPE", "facilities");
+        intent.putExtra("INDEX", "0");
         startActivity(intent);
     }
     //events
     public void onEventsClick(View view) {
         Toast.makeText(this, "Events clicked", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("BUTTON_TYPE", "events");
+        intent.putExtra("INDEX", "1");
         startActivity(intent);
     }
     //club
     public void onClubsClick(View view) {
         Toast.makeText(this, "Clubs clicked", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("BUTTON_TYPE", "clubs");
+        intent.putExtra("INDEX", "2");
         startActivity(intent);
     }
     //support
     public void onSupportClick(View view) {
         Toast.makeText(this, "Support clicked", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("BUTTON_TYPE", "support");
+        intent.putExtra("INDEX", "3");
         startActivity(intent);
     }
 
